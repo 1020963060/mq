@@ -1,0 +1,26 @@
+这个代码表示，activemq知识点
+导入架包
+<dependency>
+            <groupId>org.apache.activemq</groupId>
+            <artifactId>activemq-spring</artifactId>
+            <version>5.15.6</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-web -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>5.0.8.RELEASE</version>
+        </dependency>
+因lo4j启动失败，导入架包
+<dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-nop</artifactId>
+            <version>1.7.2</version>
+            </dependency>
+
+            网络地址是tcp协议，这是java代码中的地址接口
+             String url = "tcp://192.168.40.130:61616";
+             浏览器的网址是，这是浏览器客户端的地址接口
+             http://192.168.40.130:8161
+由于topit是实时在线发布服务，它设置了一个监听器，来监听服务提供者
+的服务发布。所以消费者是先开启这的，也就是cline
